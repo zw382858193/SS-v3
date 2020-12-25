@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+".\objects\app.o"
+".\objects\uart1.o"
+".\objects\uart2.o"
+".\objects\uart3.o"
+".\objects\crc16_mobus.o"
+".\objects\flash.o"
+".\objects\remote-comm.o"
+".\objects\uart4.o"
+".\objects\utils.o"
+".\objects\device_can.o"
+".\objects\can_comm_ctrl.o"
+".\objects\sorting_ctrl.o"
+".\objects\misc.o"
+".\objects\stm32f10x_can.o"
+".\objects\stm32f10x_flash.o"
+".\objects\stm32f10x_gpio.o"
+".\objects\stm32f10x_iwdg.o"
+".\objects\stm32f10x_rcc.o"
+".\objects\stm32f10x_usart.o"
+".\objects\startup_stm32f10x_hd.o"
+".\objects\system_stm32f10x.o"
+--strict --scatter ".\Objects\sorting_system3_slave.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\sorting_system3_slave.map" -o .\Objects\sorting_system3_slave.axf
